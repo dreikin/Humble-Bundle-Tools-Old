@@ -1,0 +1,908 @@
+{
+    "amount_spent": 30.0,
+    "product": {
+        "category": "bundle",
+        "machine_name": "joyofcoding_bookbundle",
+        "post_purchase_text": "",
+        "supports_canonical": false,
+        "human_name": "Humble Book Bundle: Joy of Coding presented by No Starch Press",
+        "partial_gift_enabled": true
+    },
+    "gamekey": "A2vaW36EGSmvcdKY",
+    "uid": "X20KJFRT385HH",
+    "created": "2016-08-17T23:00:07.917260",
+    "subproducts": [{
+        "machine_name": "joyofcoding_sampler",
+        "url": "https://www.nostarch.com/",
+        "downloads": [{
+            "machine_name": "joyofcoding_sampler_ebook",
+            "platform": "ebook",
+            "download_struct": [{
+                "uploaded_at": "2016-08-10T21:06:06.152450",
+                "name": "PDF",
+                "url": {
+                    "web": "https://dl.humble.com/joyofcoding_sampler.pdf?gamekey=A2vaW36EGSmvcdKY&ttl=1483262159&t=8ff2d87b177c7be6cad6b7864be1aa66",
+                    "bittorrent": "https://dl.humble.com/torrents/joyofcoding_sampler.pdf.torrent?gamekey=A2vaW36EGSmvcdKY&ttl=1483262159&t=6db2da1c0de2e54cd30e7e30eeab0a0e"
+                },
+                "human_size": "11.7 MB",
+                "file_size": 12274638,
+                "small": 1,
+                "md5": "79cd69b20a0f751fd8b013f8c47b8eff"
+            }],
+            "options_dict": {},
+            "download_identifier": null,
+            "android_app_only": false,
+            "download_version_number": null
+        }],
+        "custom_download_page_box_html": "",
+        "payee": {
+            "human_name": "No Starch Press",
+            "machine_name": "nostarchpress"
+        },
+        "human_name": "Hacker Bundle 2016 PDF Sampler",
+        "library_family_name": "",
+        "icon": "https://humblebundle-a.akamaihd.net/misc/files/hashed/adfcd2108952657ca8f0b19eb2f966b6cbb3c319.png"
+    }, {
+        "machine_name": "thebookoffsharp",
+        "url": "https://www.nostarch.com/fsharp",
+        "downloads": [{
+            "machine_name": "thebookoffsharp_ebook",
+            "platform": "ebook",
+            "download_struct": [{
+                "sha1": "24ba2298a6c019485933573ccca2441b028a313f",
+                "name": "MOBI",
+                "url": {
+                    "web": "https://dl.humble.com/thebookoffsharp.mobi?gamekey=A2vaW36EGSmvcdKY&ttl=1483262159&t=2df16de94f78a3f33c158b5df05ad201",
+                    "bittorrent": "https://dl.humble.com/torrents/thebookoffsharp.mobi.torrent?gamekey=A2vaW36EGSmvcdKY&ttl=1483262159&t=2b10ba4bc8015079b6691ae9bd42f79c"
+                },
+                "human_size": "5.9 MB",
+                "uses_kindle_sender": true,
+                "file_size": 6235083,
+                "small": 1,
+                "md5": "ff6549eded1faa109424a6f438bf6086"
+            }, {
+                "sha1": "cc611ef1e40dfde412963a58710785375a60a0b3",
+                "name": "EPUB",
+                "url": {
+                    "web": "https://dl.humble.com/thebookoffsharp.epub?gamekey=A2vaW36EGSmvcdKY&ttl=1483262159&t=5bb0a6d6995dcba34793e77f86967320",
+                    "bittorrent": "https://dl.humble.com/torrents/thebookoffsharp.epub.torrent?gamekey=A2vaW36EGSmvcdKY&ttl=1483262159&t=a6e99bbeedcccc51e3ba0b5856f136db"
+                },
+                "human_size": "1.9 MB",
+                "file_size": 1974217,
+                "small": 1,
+                "md5": "5b28d7d0becce626407ff48676233f6c"
+            }, {
+                "sha1": "3e556ad0111e87631bbe659c56b4388e6088969a",
+                "name": "PDF",
+                "url": {
+                    "web": "https://dl.humble.com/thebookoffsharp.pdf?gamekey=A2vaW36EGSmvcdKY&ttl=1483262159&t=6a8d4c1fe5b4647e6899a83fa38f0402",
+                    "bittorrent": "https://dl.humble.com/torrents/thebookoffsharp.pdf.torrent?gamekey=A2vaW36EGSmvcdKY&ttl=1483262159&t=5f033c5a08af74ae68df404f57795f1c"
+                },
+                "human_size": "4.3 MB",
+                "file_size": 4535121,
+                "small": 1,
+                "md5": "f78878dd7dcb9b7a7456555736e8c6eb"
+            }],
+            "options_dict": {},
+            "download_identifier": null,
+            "android_app_only": false,
+            "download_version_number": null
+        }],
+        "custom_download_page_box_html": null,
+        "payee": {
+            "human_name": "No Starch Press",
+            "machine_name": "nostarchpress"
+        },
+        "human_name": "The Book of F#: Breaking Free with Managed Functional Programming",
+        "library_family_name": null,
+        "icon": "https://humblebundle-a.akamaihd.net/misc/files/hashed/c3fbcfdb95fc64a6521bb6d1a3169d9be97e4358.png"
+    }, {
+        "machine_name": "learnyouahaskellforgreatgood",
+        "url": "https://www.nostarch.com/lyah.htm",
+        "downloads": [{
+            "machine_name": "learnyouahaskellforgreatgood_ebook",
+            "platform": "ebook",
+            "download_struct": [{
+                "sha1": "0dc74107d416874f5f7ba06056ed95b279b581e7",
+                "name": "MOBI",
+                "url": {
+                    "web": "https://dl.humble.com/learnyouahaskellforgreatgood.mobi?gamekey=A2vaW36EGSmvcdKY&ttl=1483262159&t=d39b75f9a2266bfa7f244226eb9eb665",
+                    "bittorrent": "https://dl.humble.com/torrents/learnyouahaskellforgreatgood.mobi.torrent?gamekey=A2vaW36EGSmvcdKY&ttl=1483262159&t=787285f4c2812f7a0cc48569d0b98364"
+                },
+                "human_size": "16.1 MB",
+                "uses_kindle_sender": true,
+                "file_size": 16853567,
+                "small": 1,
+                "md5": "c57e7f29d7ceb680b363db903bb58b95"
+            }, {
+                "sha1": "a9cf10f5a73888d8859f3e390d7a0d64f7ff8e3f",
+                "name": "EPUB",
+                "url": {
+                    "web": "https://dl.humble.com/learnyouahaskellforgreatgood.epub?gamekey=A2vaW36EGSmvcdKY&ttl=1483262159&t=acf8f3cb6fc51a55c46527196f13017c",
+                    "bittorrent": "https://dl.humble.com/torrents/learnyouahaskellforgreatgood.epub.torrent?gamekey=A2vaW36EGSmvcdKY&ttl=1483262159&t=e02be1e1c08a6028825f41480c832bf3"
+                },
+                "human_size": "7.8 MB",
+                "file_size": 8142980,
+                "small": 1,
+                "md5": "cd0c174eac3b999fab02350dac571c27"
+            }, {
+                "sha1": "2c5e3fec49a872a8b0b8aaa594f24b7b0943d282",
+                "name": "PDF",
+                "url": {
+                    "web": "https://dl.humble.com/learnyouahaskellforgreatgood.pdf?gamekey=A2vaW36EGSmvcdKY&ttl=1483262159&t=c09b30973a3cd2e1e09d4bc377f3b87a",
+                    "bittorrent": "https://dl.humble.com/torrents/learnyouahaskellforgreatgood.pdf.torrent?gamekey=A2vaW36EGSmvcdKY&ttl=1483262159&t=5eebe402fe1e2f54778d75bc62bb358d"
+                },
+                "human_size": "11 MB",
+                "file_size": 11519036,
+                "small": 1,
+                "md5": "2469c7fd9d06e5ce3ae4b521dec1a171"
+            }],
+            "options_dict": {},
+            "download_identifier": null,
+            "android_app_only": false,
+            "download_version_number": null
+        }],
+        "custom_download_page_box_html": null,
+        "payee": {
+            "human_name": "No Starch Press",
+            "machine_name": "nostarchpress"
+        },
+        "human_name": "Learn You A Haskell for Great Good!",
+        "library_family_name": null,
+        "icon": "https://humblebundle-a.akamaihd.net/misc/files/hashed/2e9b617e329f3d15824de829ea0edf339637fe01.png"
+    }, {
+        "machine_name": "learnyousomeerlangforgreatgood",
+        "url": "https://www.nostarch.com/erlang",
+        "downloads": [{
+            "machine_name": "learnyousomeerlangforgreatgood_ebook",
+            "platform": "ebook",
+            "download_struct": [{
+                "sha1": "082a2852f3f661becb62c2849b914aec5db8949a",
+                "name": "MOBI",
+                "url": {
+                    "web": "https://dl.humble.com/learnyousomeerlangforgreatgood.mobi?gamekey=A2vaW36EGSmvcdKY&ttl=1483262159&t=f21ae965132797744c408ccc89a5763d",
+                    "bittorrent": "https://dl.humble.com/torrents/learnyousomeerlangforgreatgood.mobi.torrent?gamekey=A2vaW36EGSmvcdKY&ttl=1483262159&t=5dcb2d9f30dd808d52459289b18727c1"
+                },
+                "human_size": "10.2 MB",
+                "uses_kindle_sender": true,
+                "file_size": 10663432,
+                "small": 1,
+                "md5": "89dc5e938cadd093bb2ba4f8387354e0"
+            }, {
+                "sha1": "13d3dc57e728f34a337f2ae3f45369cdfd7a1fb5",
+                "name": "EPUB",
+                "url": {
+                    "web": "https://dl.humble.com/learnyousomeerlangforgreatgood.epub?gamekey=A2vaW36EGSmvcdKY&ttl=1483262159&t=313f052e2a7b0f5c893c6a978bfc57f9",
+                    "bittorrent": "https://dl.humble.com/torrents/learnyousomeerlangforgreatgood.epub.torrent?gamekey=A2vaW36EGSmvcdKY&ttl=1483262159&t=95c63b65ac59409d06abe76d665a59c7"
+                },
+                "human_size": "13.9 MB",
+                "file_size": 14585762,
+                "small": 1,
+                "md5": "0212e0a3f895237405b04b8fdd55556f"
+            }, {
+                "sha1": "47d154e3226d5f1b2d365872241e1b00ce97c9cc",
+                "name": "PDF",
+                "url": {
+                    "web": "https://dl.humble.com/learnyousomeerlangforgreatgood.pdf?gamekey=A2vaW36EGSmvcdKY&ttl=1483262159&t=9feb269d57e0634669f6029e41801ae6",
+                    "bittorrent": "https://dl.humble.com/torrents/learnyousomeerlangforgreatgood.pdf.torrent?gamekey=A2vaW36EGSmvcdKY&ttl=1483262159&t=56d3e4a739f14f39e10e280761a63235"
+                },
+                "human_size": "15.5 MB",
+                "file_size": 16232157,
+                "small": 1,
+                "md5": "ee4ffeefb92649c78cf7781f8948d9df"
+            }],
+            "options_dict": {},
+            "download_identifier": null,
+            "android_app_only": false,
+            "download_version_number": null
+        }],
+        "custom_download_page_box_html": null,
+        "payee": {
+            "human_name": "No Starch Press",
+            "machine_name": "nostarchpress"
+        },
+        "human_name": "Learn You Some Erlang for Great Good!",
+        "library_family_name": null,
+        "icon": "https://humblebundle-a.akamaihd.net/misc/files/hashed/1539b97413f803b81b520c913a4f215e3827a3a6.png"
+    }, {
+        "machine_name": "automatetheboringstuffwithpython",
+        "url": "http://www.nostarch.com/automatestuff",
+        "downloads": [{
+            "machine_name": "automatetheboringstuffwithpython_ebook",
+            "platform": "ebook",
+            "download_struct": [{
+                "uploaded_at": "2016-04-19T18:44:33.815820",
+                "name": "MOBI",
+                "url": {
+                    "web": "https://dl.humble.com/automatetheboringstuffwithpython_new.mobi?gamekey=A2vaW36EGSmvcdKY&ttl=1483262159&t=1293c34861d1f2b15b3ff4022e0b921c",
+                    "bittorrent": "https://dl.humble.com/torrents/automatetheboringstuffwithpython_new.mobi.torrent?gamekey=A2vaW36EGSmvcdKY&ttl=1483262159&t=e9b4797b6e45e66e79edd6b8e6210a2b"
+                },
+                "human_size": "11.6 MB",
+                "uses_kindle_sender": true,
+                "file_size": 12151264,
+                "small": 1,
+                "md5": "4423eb3d3760978bf3a31c8f3bb87a41"
+            }, {
+                "sha1": "116c9c127d504610e0ea0319814204f3a010306a",
+                "name": "EPUB",
+                "human_size": "5.7 MB",
+                "url": {
+                    "web": "https://dl.humble.com/automatetheboringstuffwithpython_new.epub?gamekey=A2vaW36EGSmvcdKY&ttl=1483262159&t=414e58ba68d45be7fad67cc2ae428ad6",
+                    "bittorrent": "https://dl.humble.com/torrents/automatetheboringstuffwithpython_new.epub.torrent?gamekey=A2vaW36EGSmvcdKY&ttl=1483262159&t=e519062452e8a6fc8ea00d94895d5dd2"
+                },
+                "uploaded_at": "2016-04-19T18:48:41.899540",
+                "file_size": 5969563,
+                "small": 1,
+                "md5": "f964817cbd1cbd76e5b6872b789c21fa"
+            }, {
+                "sha1": "a2e89d810cd9c58085c9f884ae8ecf2c9513e11a",
+                "name": "PDF",
+                "human_size": "14.2 MB",
+                "url": {
+                    "web": "https://dl.humble.com/automatetheboringstuffwithpython_new.pdf?gamekey=A2vaW36EGSmvcdKY&ttl=1483262159&t=b5a30b2a7d2ca779398b24f137464389",
+                    "bittorrent": "https://dl.humble.com/torrents/automatetheboringstuffwithpython_new.pdf.torrent?gamekey=A2vaW36EGSmvcdKY&ttl=1483262159&t=60a1b92ebe10e8bafa7e0360bf71f117"
+                },
+                "uploaded_at": "2016-04-19T18:41:23.496400",
+                "file_size": 14880335,
+                "small": 1,
+                "md5": "4dd22932bdaae6b35d947c3fc943e789"
+            }],
+            "options_dict": {},
+            "download_identifier": "",
+            "android_app_only": false,
+            "download_version_number": null
+        }],
+        "custom_download_page_box_html": "",
+        "payee": {
+            "human_name": "No Starch Press",
+            "machine_name": "nostarchpress"
+        },
+        "human_name": "Automate the Boring Stuff with Python: Practical Programming for Total Beginners",
+        "library_family_name": "",
+        "icon": "https://humblebundle-a.akamaihd.net/misc/files/hashed/b97c1fb7a8db2807b6c7a5a7f2b9708f86255137.png"
+    }, {
+        "machine_name": "thelinuxcommandline",
+        "url": "http://www.nostarch.com/tlcl",
+        "downloads": [{
+            "machine_name": "thelinuxcommandline_ebook",
+            "platform": "ebook",
+            "download_struct": [{
+                "uploaded_at": "2016-04-19T18:38:35.672860",
+                "name": "MOBI",
+                "url": {
+                    "web": "https://dl.humble.com/linuxcommandline.mobi?gamekey=A2vaW36EGSmvcdKY&ttl=1483262159&t=330d790fabbb44d007bbf4f6fdb0ddf7",
+                    "bittorrent": "https://dl.humble.com/torrents/linuxcommandline.mobi.torrent?gamekey=A2vaW36EGSmvcdKY&ttl=1483262159&t=f67458581ca01c3f626c4791a2025813"
+                },
+                "human_size": "5.1 MB",
+                "uses_kindle_sender": true,
+                "file_size": 5333528,
+                "small": 1,
+                "md5": "3f45de295ca8e3b93f8ed1e36eb19690"
+            }, {
+                "sha1": "9f060dff526b5068c8fb15e2fb5b2651b3949adb",
+                "name": "EPUB",
+                "url": {
+                    "web": "https://dl.humble.com/thelinuxcommandline.epub?gamekey=A2vaW36EGSmvcdKY&ttl=1483262159&t=9bb8abe671de03a4437e9ca0ccd92df3",
+                    "bittorrent": "https://dl.humble.com/torrents/thelinuxcommandline.epub.torrent?gamekey=A2vaW36EGSmvcdKY&ttl=1483262159&t=9518a1861bbe59b1decfd0541a8619a9"
+                },
+                "human_size": "1.9 MB",
+                "file_size": 1946496,
+                "small": 1,
+                "md5": "370c2b2413abed2b939185535e74fd7d"
+            }, {
+                "sha1": "ffdd60247d53cba80f5bf857bad9018e8bd2e364",
+                "name": "PDF",
+                "url": {
+                    "web": "https://dl.humble.com/thelinuxcommandline.pdf?gamekey=A2vaW36EGSmvcdKY&ttl=1483262159&t=793155ae53acac562ec1fe2cf334b492",
+                    "bittorrent": "https://dl.humble.com/torrents/thelinuxcommandline.pdf.torrent?gamekey=A2vaW36EGSmvcdKY&ttl=1483262159&t=48475a50df7bb6763ab5a1b5a6a60ce8"
+                },
+                "human_size": "8.9 MB",
+                "file_size": 9377457,
+                "small": 1,
+                "md5": "af50741da81796774e8f41c617f614cc"
+            }],
+            "options_dict": {},
+            "download_identifier": "",
+            "android_app_only": false,
+            "download_version_number": null
+        }],
+        "custom_download_page_box_html": "",
+        "payee": {
+            "human_name": "No Starch Press",
+            "machine_name": "nostarchpress"
+        },
+        "human_name": "The Linux Command Line: A Complete Introduction",
+        "library_family_name": "",
+        "icon": "https://humblebundle-a.akamaihd.net/misc/files/hashed/ac49b7e3da6a5631bb554e844a816694be3fa6c0.png"
+    }, {
+        "machine_name": "ifhemmingwaywrotejavascript",
+        "url": "https://www.nostarch.com/hemingway",
+        "downloads": [{
+            "machine_name": "ifhemmingwaywrotejavascript_ebook",
+            "platform": "ebook",
+            "download_struct": [{
+                "uploaded_at": "2016-08-10T20:50:01.816610",
+                "name": "PDF",
+                "url": {
+                    "web": "https://dl.humble.com/ifhemmingwaywrotejavascript.pdf?gamekey=A2vaW36EGSmvcdKY&ttl=1483262159&t=cdf7ac1d20f18cf770f24c8850065e3f",
+                    "bittorrent": "https://dl.humble.com/torrents/ifhemmingwaywrotejavascript.pdf.torrent?gamekey=A2vaW36EGSmvcdKY&ttl=1483262159&t=4bcfb97d6da40a1c81d5d2c21b668088"
+                },
+                "human_size": "5.4 MB",
+                "file_size": 5691186,
+                "small": 1,
+                "md5": "208233e1032a3022129b309f96d17494"
+            }, {
+                "uploaded_at": "2016-08-10T20:53:35.951950",
+                "name": "EPUB",
+                "url": {
+                    "web": "https://dl.humble.com/ifhemingwaywrotejavascript.epub?gamekey=A2vaW36EGSmvcdKY&ttl=1483262159&t=2d5d6b67a38cfe4a8fbe107a0a295aff",
+                    "bittorrent": "https://dl.humble.com/torrents/ifhemingwaywrotejavascript.epub.torrent?gamekey=A2vaW36EGSmvcdKY&ttl=1483262159&t=b9fd4351d0e073ababc25a2a0734d43b"
+                },
+                "human_size": "11.6 MB",
+                "file_size": 12113223,
+                "small": 1,
+                "md5": "e9dec9ac6fccc8ed5862ffe0de5f2d85"
+            }],
+            "options_dict": {},
+            "download_identifier": null,
+            "android_app_only": false,
+            "download_version_number": null
+        }],
+        "custom_download_page_box_html": "",
+        "payee": {
+            "human_name": "No Starch Press",
+            "machine_name": "nostarchpress"
+        },
+        "human_name": "If Hemingway Wrote JavaScript",
+        "library_family_name": "",
+        "icon": "https://humblebundle-a.akamaihd.net/misc/files/hashed/7872ccc5745f4839c54375708cc874b37be8c26c.png"
+    }, {
+        "machine_name": "landoflisp_learntoprgraminlisp",
+        "url": "https://www.nostarch.com/lisp.htm",
+        "downloads": [{
+            "machine_name": "landoflisp_learntoprgraminlisp_ebook",
+            "platform": "ebook",
+            "download_struct": [{
+                "sha1": "5026e42cf5986589e9aee4188c7925e57895004f",
+                "name": "MOBI",
+                "url": {
+                    "web": "https://dl.humble.com/landoflisp_learntoprgraminlisp.mobi?gamekey=A2vaW36EGSmvcdKY&ttl=1483262159&t=1847003b8ad4f28c10a0131d28094131",
+                    "bittorrent": "https://dl.humble.com/torrents/landoflisp_learntoprgraminlisp.mobi.torrent?gamekey=A2vaW36EGSmvcdKY&ttl=1483262159&t=a8a1ee2ec7e738205e9a4b45b76de9d0"
+                },
+                "human_size": "38.9 MB",
+                "uses_kindle_sender": true,
+                "file_size": 40799443,
+                "small": 1,
+                "md5": "b98aa57b849c221e2fa4f7f4e5363b37"
+            }, {
+                "sha1": "d089c69b24d48f42ce5a08312914559592468b03",
+                "name": "EPUB",
+                "url": {
+                    "web": "https://dl.humble.com/landoflisp_learntoprgraminlisp.epub?gamekey=A2vaW36EGSmvcdKY&ttl=1483262159&t=b5df6317f236fc297f228a524040db33",
+                    "bittorrent": "https://dl.humble.com/torrents/landoflisp_learntoprgraminlisp.epub.torrent?gamekey=A2vaW36EGSmvcdKY&ttl=1483262159&t=e2401e14f583919146e047b9f6704d90"
+                },
+                "human_size": "21.2 MB",
+                "file_size": 22269361,
+                "small": 1,
+                "md5": "3d3a55c7a94b1bed3b4413623078d2da"
+            }, {
+                "sha1": "2e316c9252188334f86b1866251936ca372af1eb",
+                "name": "PDF",
+                "url": {
+                    "web": "https://dl.humble.com/landoflisp_learntoprgraminlisp.pdf?gamekey=A2vaW36EGSmvcdKY&ttl=1483262159&t=58945503f7e8629cf98ded1e46fd6231",
+                    "bittorrent": "https://dl.humble.com/torrents/landoflisp_learntoprgraminlisp.pdf.torrent?gamekey=A2vaW36EGSmvcdKY&ttl=1483262159&t=a191d5898639e73ab61ea4fe7d1bd6be"
+                },
+                "human_size": "22.6 MB",
+                "file_size": 23719337,
+                "small": 1,
+                "md5": "62dc4b4f72be2d25a98c6028b8d6f1c3"
+            }],
+            "options_dict": {},
+            "download_identifier": null,
+            "android_app_only": false,
+            "download_version_number": null
+        }],
+        "custom_download_page_box_html": null,
+        "payee": {
+            "human_name": "No Starch Press",
+            "machine_name": "nostarchpress"
+        },
+        "human_name": "Land of Lisp: Learn to Program in Lisp, One Game at a Time!",
+        "library_family_name": null,
+        "icon": "https://humblebundle-a.akamaihd.net/misc/files/hashed/3a6ff4b35485e47ac4d7013b70c87c8eb43ab881.png"
+    }, {
+        "machine_name": "writegreatcode_vol1",
+        "url": "https://www.nostarch.com/greatcode.htm",
+        "downloads": [{
+            "machine_name": "writegreatcode_vol1_ebook",
+            "platform": "ebook",
+            "download_struct": [{
+                "sha1": "5d2ee2e3ffe5c06d531f71ae6bab159764b34605",
+                "name": "MOBI",
+                "url": {
+                    "web": "https://dl.humble.com/writegreatcode_vol1.mobi?gamekey=A2vaW36EGSmvcdKY&ttl=1483262159&t=d43775e64edb1301525c3925f242036a",
+                    "bittorrent": "https://dl.humble.com/torrents/writegreatcode_vol1.mobi.torrent?gamekey=A2vaW36EGSmvcdKY&ttl=1483262159&t=06285f4d0c5771182caa96cab6f08572"
+                },
+                "human_size": "18.7 MB",
+                "uses_kindle_sender": true,
+                "file_size": 19603460,
+                "small": 1,
+                "md5": "eec9681681d4a47857ba39b65461a70a"
+            }, {
+                "sha1": "0f1b25d756891456770a7284ea168a6827d489e5",
+                "name": "EPUB",
+                "url": {
+                    "web": "https://dl.humble.com/writegreatcode_vol1.epub?gamekey=A2vaW36EGSmvcdKY&ttl=1483262159&t=7f5451044703ef250a1d24af9f86889f",
+                    "bittorrent": "https://dl.humble.com/torrents/writegreatcode_vol1.epub.torrent?gamekey=A2vaW36EGSmvcdKY&ttl=1483262159&t=8108208b1f29f175e589e9dc0266be56"
+                },
+                "human_size": "5.9 MB",
+                "file_size": 6216502,
+                "small": 1,
+                "md5": "503ee4782b1a3616463145d6aac3acdb"
+            }, {
+                "sha1": "3e1a9d901b0982e0f1d1b05f3486ceaf66d406f6",
+                "name": "PDF",
+                "human_size": "7 MB",
+                "url": {
+                    "web": "https://dl.humble.com/writegreatcode_vol1_1473205548.pdf?gamekey=A2vaW36EGSmvcdKY&ttl=1483262159&t=c8840ab9e7cf9bef114d95c17fc26133",
+                    "bittorrent": "https://dl.humble.com/torrents/writegreatcode_vol1_1473205548.pdf.torrent?gamekey=A2vaW36EGSmvcdKY&ttl=1483262159&t=30417749b8b4d961d06b5f9ada86877a"
+                },
+                "timestamp": 1473205651,
+                "uploaded_at": "2016-09-06T23:47:01.122910",
+                "file_size": 7390038,
+                "small": 1,
+                "md5": "69a7d8f73f919494fd34e26814821923"
+            }],
+            "options_dict": {},
+            "download_identifier": "",
+            "android_app_only": false,
+            "download_version_number": null
+        }],
+        "custom_download_page_box_html": "",
+        "payee": {
+            "human_name": "No Starch Press",
+            "machine_name": "nostarchpress"
+        },
+        "human_name": "Write Great Code, Volume 1: Understanding the Machine",
+        "library_family_name": "",
+        "icon": "https://humblebundle-a.akamaihd.net/misc/files/hashed/17ef316e509f00feaf74e8f6bb7cd61a8c3fe9b7.png"
+    }, {
+        "machine_name": "theprinciplesofobjectorientedjavascript",
+        "url": "https://www.nostarch.com/oojs",
+        "downloads": [{
+            "machine_name": "theprinciplesofobjectorientedjavascript_ebook",
+            "platform": "ebook",
+            "download_struct": [{
+                "sha1": "0b1153cc4e6e0bd3f64433e102fd9607ea1d1cbc",
+                "name": "MOBI",
+                "url": {
+                    "web": "https://dl.humble.com/theprinciplesofobjectorientedjavascript.mobi?gamekey=A2vaW36EGSmvcdKY&ttl=1483262159&t=9e148035c010a85bbdbae3fca5f93073",
+                    "bittorrent": "https://dl.humble.com/torrents/theprinciplesofobjectorientedjavascript.mobi.torrent?gamekey=A2vaW36EGSmvcdKY&ttl=1483262159&t=d4ecdc2bc91b6f7edf7735af9178cdc4"
+                },
+                "human_size": "4.3 MB",
+                "uses_kindle_sender": true,
+                "file_size": 4466539,
+                "small": 1,
+                "md5": "adea455c76d80c9445280746050d0315"
+            }, {
+                "sha1": "e93ffa85c4b1b73836a5cb5a129d0eab6ce1b4ab",
+                "name": "EPUB",
+                "url": {
+                    "web": "https://dl.humble.com/theprinciplesofobjectorientedjavascript.epub?gamekey=A2vaW36EGSmvcdKY&ttl=1483262159&t=3ce43abaffed2dcffc9446bf376f4bd9",
+                    "bittorrent": "https://dl.humble.com/torrents/theprinciplesofobjectorientedjavascript.epub.torrent?gamekey=A2vaW36EGSmvcdKY&ttl=1483262159&t=91876042013e3a798671c481c78a2033"
+                },
+                "human_size": "1.4 MB",
+                "file_size": 1428791,
+                "small": 1,
+                "md5": "1ee6ef770788b314681d202e476ea2eb"
+            }, {
+                "sha1": "ed3ebf4b6309f2d37d6014ce866b429f52f9c0cd",
+                "name": "PDF",
+                "url": {
+                    "web": "https://dl.humble.com/theprinciplesofobjectorientedjavascript.pdf?gamekey=A2vaW36EGSmvcdKY&ttl=1483262159&t=6212b6f82e69eed8684ed53a020d4c0d",
+                    "bittorrent": "https://dl.humble.com/torrents/theprinciplesofobjectorientedjavascript.pdf.torrent?gamekey=A2vaW36EGSmvcdKY&ttl=1483262159&t=ced1610f6a168319802c04921587d0a7"
+                },
+                "human_size": "3.3 MB",
+                "file_size": 3469076,
+                "small": 1,
+                "md5": "f1d9a32b09131bf8df09b45d23cbe483"
+            }],
+            "options_dict": {},
+            "download_identifier": null,
+            "android_app_only": false,
+            "download_version_number": null
+        }],
+        "custom_download_page_box_html": null,
+        "payee": {
+            "human_name": "No Starch Press",
+            "machine_name": "nostarchpress"
+        },
+        "human_name": "The Principles of Object-Oriented JavaScript",
+        "library_family_name": null,
+        "icon": "https://humblebundle-a.akamaihd.net/misc/files/hashed/be167c9de53c03cd5ec04c7a1b2bea761582e8ed.png"
+    }, {
+        "machine_name": "realmofracket_learntoprogram",
+        "url": "https://www.nostarch.com/realmofracket.htm",
+        "downloads": [{
+            "machine_name": "realmofracket_learntoprogram_ebook",
+            "platform": "ebook",
+            "download_struct": [{
+                "sha1": "c50dca37082c6ebd00ae281ca2c246c18ee5f6ae",
+                "name": "MOBI",
+                "url": {
+                    "web": "https://dl.humble.com/realmofracket_learntoprogram.mobi?gamekey=A2vaW36EGSmvcdKY&ttl=1483262159&t=1ade0816506bcf2d98c04bb4572e5d62",
+                    "bittorrent": "https://dl.humble.com/torrents/realmofracket_learntoprogram.mobi.torrent?gamekey=A2vaW36EGSmvcdKY&ttl=1483262159&t=6fb7ac4710c6b1f4db02a30cdb588483"
+                },
+                "human_size": "16 MB",
+                "uses_kindle_sender": true,
+                "file_size": 16800142,
+                "small": 1,
+                "md5": "cc2ff0d68705ff1f067b16a5532a4490"
+            }, {
+                "sha1": "9bee7338f3044c12dd8ce9dcc94921ceb192f9b4",
+                "name": "EPUB",
+                "url": {
+                    "web": "https://dl.humble.com/realmofracket_learntoprogram.epub?gamekey=A2vaW36EGSmvcdKY&ttl=1483262159&t=f25c01155f7f9b934a9c5a029cf42aa8",
+                    "bittorrent": "https://dl.humble.com/torrents/realmofracket_learntoprogram.epub.torrent?gamekey=A2vaW36EGSmvcdKY&ttl=1483262159&t=cae9b277260a72e282a5c38d30661a00"
+                },
+                "human_size": "8.7 MB",
+                "file_size": 9172720,
+                "small": 1,
+                "md5": "78604a4bfc30e8cbcc316ff4253f76ba"
+            }, {
+                "sha1": "686cc5328a2afa54dc439352962d0544c35c8abe",
+                "name": "PDF",
+                "url": {
+                    "web": "https://dl.humble.com/realmofracket_learntoprogram.pdf?gamekey=A2vaW36EGSmvcdKY&ttl=1483262159&t=fcdea019ff3acbb94f33d2d0348c5a58",
+                    "bittorrent": "https://dl.humble.com/torrents/realmofracket_learntoprogram.pdf.torrent?gamekey=A2vaW36EGSmvcdKY&ttl=1483262159&t=8d63833214656b28ae16ef67cf2a5627"
+                },
+                "human_size": "17.7 MB",
+                "file_size": 18570436,
+                "small": 1,
+                "md5": "357ff4c11c65a6d9f9400169588a1107"
+            }],
+            "options_dict": {},
+            "download_identifier": null,
+            "android_app_only": false,
+            "download_version_number": null
+        }],
+        "custom_download_page_box_html": null,
+        "payee": {
+            "human_name": "No Starch Press",
+            "machine_name": "nostarchpress"
+        },
+        "human_name": "Realm of Racket: Learn to Program, One Game at a Time!",
+        "library_family_name": null,
+        "icon": "https://humblebundle-a.akamaihd.net/misc/files/hashed/0b7bec622ba1d4b1e81b922045185722def21009.png"
+    }, {
+        "machine_name": "eloquentjavascript_2ndedition",
+        "url": "https://www.nostarch.com/ejs2",
+        "downloads": [{
+            "machine_name": "eloquentjavascript_2ndedition_ebook",
+            "platform": "ebook",
+            "download_struct": [{
+                "sha1": "4969a0f43907954f3fc4a02149397062e2d5c917",
+                "name": "MOBI",
+                "url": {
+                    "web": "https://dl.humble.com/eloquentjavascript_2ndedition.mobi?gamekey=A2vaW36EGSmvcdKY&ttl=1483262159&t=8f7b6ba73cae0a6636433f2b4f73dc57",
+                    "bittorrent": "https://dl.humble.com/torrents/eloquentjavascript_2ndedition.mobi.torrent?gamekey=A2vaW36EGSmvcdKY&ttl=1483262159&t=71cbaee4def5f85c28b50312fa7ff662"
+                },
+                "human_size": "8.5 MB",
+                "uses_kindle_sender": true,
+                "file_size": 8907201,
+                "small": 1,
+                "md5": "b2ca92d53cd7e179a21e3806007608f3"
+            }, {
+                "sha1": "8244f790176bf4bfc30785ca8a4713ca1bd44501",
+                "name": "EPUB",
+                "url": {
+                    "web": "https://dl.humble.com/eloquentjavascript_2ndedition.epub?gamekey=A2vaW36EGSmvcdKY&ttl=1483262159&t=70abc9070658167d60791bfdf4f9ccad",
+                    "bittorrent": "https://dl.humble.com/torrents/eloquentjavascript_2ndedition.epub.torrent?gamekey=A2vaW36EGSmvcdKY&ttl=1483262159&t=ec3f7b9086f738ecd8d67214476e014e"
+                },
+                "human_size": "2.9 MB",
+                "file_size": 3044505,
+                "small": 1,
+                "md5": "8c79b1a8c534f92b66650963fe47a7a2"
+            }, {
+                "sha1": "51c36a65afd3616e80bb77daf83db2cf90d8c4c6",
+                "name": "PDF",
+                "url": {
+                    "web": "https://dl.humble.com/eloquentjavascript_2ndedition.pdf?gamekey=A2vaW36EGSmvcdKY&ttl=1483262159&t=d63e92902103e3e1d8a02fdb4c2a20cb",
+                    "bittorrent": "https://dl.humble.com/torrents/eloquentjavascript_2ndedition.pdf.torrent?gamekey=A2vaW36EGSmvcdKY&ttl=1483262159&t=0d82cbbf87cba28cad9826f03e6eabe8"
+                },
+                "human_size": "4.6 MB",
+                "file_size": 4793464,
+                "small": 1,
+                "md5": "18a7b5a7c86441a7fccdbdf37e561c1c"
+            }],
+            "options_dict": {},
+            "download_identifier": null,
+            "android_app_only": false,
+            "download_version_number": null
+        }],
+        "custom_download_page_box_html": null,
+        "payee": {
+            "human_name": "No Starch Press",
+            "machine_name": "nostarchpress"
+        },
+        "human_name": "Eloquent JavaScript, 2nd edition: A Modern Introduction to Programming",
+        "library_family_name": null,
+        "icon": "https://humblebundle-a.akamaihd.net/misc/files/hashed/60ebd87a0f9c43215fd04c8ce0096019f6882104.png"
+    }, {
+        "machine_name": "clojureforthebraveandtrue",
+        "url": "https://www.nostarch.com/clojure",
+        "downloads": [{
+            "machine_name": "clojureforthebraveandtrue_ebook",
+            "platform": "ebook",
+            "download_struct": [{
+                "sha1": "f1bcf6044cc221e6eb1019aaf1913281197b6fe9",
+                "name": "MOBI",
+                "url": {
+                    "web": "https://dl.humble.com/clojureforthebraveandtrue.mobi?gamekey=A2vaW36EGSmvcdKY&ttl=1483262159&t=740d809ae3c727c5ebb04eda90abea40",
+                    "bittorrent": "https://dl.humble.com/torrents/clojureforthebraveandtrue.mobi.torrent?gamekey=A2vaW36EGSmvcdKY&ttl=1483262159&t=0a9cb0431975441d86b3a126115e720a"
+                },
+                "human_size": "38.1 MB",
+                "uses_kindle_sender": true,
+                "file_size": 39922811,
+                "small": 1,
+                "md5": "1a525949c458ffcb9c8cbdcf4a53684c"
+            }, {
+                "sha1": "f6b2ea12bcd3c44c01d99209402039092d6a61f0",
+                "name": "EPUB",
+                "url": {
+                    "web": "https://dl.humble.com/clojureforthebraveandtrue.epub?gamekey=A2vaW36EGSmvcdKY&ttl=1483262159&t=269ae2eccac3ee88c6ea97361a1e1cd5",
+                    "bittorrent": "https://dl.humble.com/torrents/clojureforthebraveandtrue.epub.torrent?gamekey=A2vaW36EGSmvcdKY&ttl=1483262159&t=e4987deae08e171563ea7a1b990945cd"
+                },
+                "human_size": "19.5 MB",
+                "file_size": 20450726,
+                "small": 1,
+                "md5": "c08964bb3eafb9c773ee5ffb2c26efda"
+            }, {
+                "sha1": "4c1263f6c659564ce1f4cdcd76136b2d3808a956",
+                "name": "PDF",
+                "url": {
+                    "web": "https://dl.humble.com/clojureforthebraveandtrue.pdf?gamekey=A2vaW36EGSmvcdKY&ttl=1483262159&t=cfb201cceb21e0c5f81a77937a747444",
+                    "bittorrent": "https://dl.humble.com/torrents/clojureforthebraveandtrue.pdf.torrent?gamekey=A2vaW36EGSmvcdKY&ttl=1483262159&t=d05dfc1809f2f047eab5337ffd23336c"
+                },
+                "human_size": "5.9 MB",
+                "file_size": 6230064,
+                "small": 1,
+                "md5": "cf9ac6f78c95381d8ad8e1cfb5e20349"
+            }],
+            "options_dict": {},
+            "download_identifier": null,
+            "android_app_only": false,
+            "download_version_number": null
+        }],
+        "custom_download_page_box_html": "",
+        "payee": {
+            "human_name": "No Starch Press",
+            "machine_name": "nostarchpress"
+        },
+        "human_name": "Clojure for the Brave and True: Learn the Ultimate Language and Become a Better Programmer",
+        "library_family_name": "",
+        "icon": "https://humblebundle-a.akamaihd.net/misc/files/hashed/aed50d5ca6ec1a525c832aca66ce42d784759018.png"
+    }, {
+        "machine_name": "thinklikeaprogrammer",
+        "url": "https://www.nostarch.com/thinklikeaprogrammer",
+        "downloads": [{
+            "machine_name": "thinklikeaprogrammer_ebook",
+            "platform": "ebook",
+            "download_struct": [{
+                "sha1": "38e189a42968bb7b8731e80b163d601b68920618",
+                "name": "MOBI",
+                "url": {
+                    "web": "https://dl.humble.com/thinklikeaprogrammer.mobi?gamekey=A2vaW36EGSmvcdKY&ttl=1483262159&t=06c547920dbba96d8d52ae2a04f8b20f",
+                    "bittorrent": "https://dl.humble.com/torrents/thinklikeaprogrammer.mobi.torrent?gamekey=A2vaW36EGSmvcdKY&ttl=1483262159&t=0cfb2900c2197d27fbd413fd97ad567f"
+                },
+                "human_size": "11 MB",
+                "uses_kindle_sender": true,
+                "file_size": 11565160,
+                "small": 1,
+                "md5": "43e6c7dccbb899d8f912083c6f0d75ab"
+            }, {
+                "sha1": "9b87126b985fa542b5b298fd91441e491e0ff44a",
+                "name": "EPUB",
+                "url": {
+                    "web": "https://dl.humble.com/thinklikeaprogrammer.epub?gamekey=A2vaW36EGSmvcdKY&ttl=1483262159&t=4c6e66ae582b8d355f56980aa70cd744",
+                    "bittorrent": "https://dl.humble.com/torrents/thinklikeaprogrammer.epub.torrent?gamekey=A2vaW36EGSmvcdKY&ttl=1483262159&t=9329692e365be996eba72aff0a33c484"
+                },
+                "human_size": "3.8 MB",
+                "file_size": 3933846,
+                "small": 1,
+                "md5": "23b8b7188f39ffc15df982a5210cde4c"
+            }, {
+                "sha1": "dcc621b8fa57523a25ebb235c36effe6cd78c010",
+                "name": "PDF",
+                "url": {
+                    "web": "https://dl.humble.com/thinklikeaprogrammer.pdf?gamekey=A2vaW36EGSmvcdKY&ttl=1483262159&t=b4b3e9f9ff1b200dd709f26ecc6bd5f6",
+                    "bittorrent": "https://dl.humble.com/torrents/thinklikeaprogrammer.pdf.torrent?gamekey=A2vaW36EGSmvcdKY&ttl=1483262159&t=2e5524f42f346adc88bd2ebb99bb0a66"
+                },
+                "human_size": "7 MB",
+                "file_size": 7381317,
+                "small": 1,
+                "md5": "5e698e55e2f14bb9870b8e34b29c20b3"
+            }],
+            "options_dict": {},
+            "download_identifier": null,
+            "android_app_only": false,
+            "download_version_number": null
+        }],
+        "custom_download_page_box_html": null,
+        "payee": {
+            "human_name": "No Starch Press",
+            "machine_name": "nostarchpress"
+        },
+        "human_name": "Think Like a Programmer: An Introduction to Creative Problem Solving",
+        "library_family_name": null,
+        "icon": "https://humblebundle-a.akamaihd.net/misc/files/hashed/5c3777521cd1b97845282e6961e4acddc3d92010.png"
+    }, {
+        "machine_name": "writegreatcode_vol2",
+        "url": "https://www.nostarch.com/greatcode2.htm",
+        "downloads": [{
+            "machine_name": "writegreatcode_vol2_ebook",
+            "platform": "ebook",
+            "download_struct": [{
+                "sha1": "00d4c33835aea72a31af9e3c5d00a1caddd9e644",
+                "name": "MOBI",
+                "url": {
+                    "web": "https://dl.humble.com/writegreatcode_vol2.mobi?gamekey=A2vaW36EGSmvcdKY&ttl=1483262159&t=708d0e5aa119a3d3f2300b9317743756",
+                    "bittorrent": "https://dl.humble.com/torrents/writegreatcode_vol2.mobi.torrent?gamekey=A2vaW36EGSmvcdKY&ttl=1483262159&t=b2f7bed87a4e79b6a74ccc52bccc0c53"
+                },
+                "human_size": "15.7 MB",
+                "uses_kindle_sender": true,
+                "file_size": 16466099,
+                "small": 1,
+                "md5": "27df84c72679358bfa57505201c3bc86"
+            }, {
+                "sha1": "2ead8d708f7e5fc98cc6746669694362bd013c80",
+                "name": "EPUB",
+                "url": {
+                    "web": "https://dl.humble.com/writegreatcode_vol2.epub?gamekey=A2vaW36EGSmvcdKY&ttl=1483262159&t=1f6b2442eec971ef85bb6c53ee959b43",
+                    "bittorrent": "https://dl.humble.com/torrents/writegreatcode_vol2.epub.torrent?gamekey=A2vaW36EGSmvcdKY&ttl=1483262159&t=a5968fbc51de4dad158aeb6ac8c5d287"
+                },
+                "human_size": "4.9 MB",
+                "file_size": 5157403,
+                "small": 1,
+                "md5": "b2c872fee042bd04bdf0574c78aeeef5"
+            }, {
+                "sha1": "992b899bb2eeb1c184a1a52b3b8bfa711073ad4f",
+                "name": "PDF",
+                "url": {
+                    "web": "https://dl.humble.com/writegreatcode_vol2.pdf?gamekey=A2vaW36EGSmvcdKY&ttl=1483262159&t=6a03fec888bda941efeabb69df25d50f",
+                    "bittorrent": "https://dl.humble.com/torrents/writegreatcode_vol2.pdf.torrent?gamekey=A2vaW36EGSmvcdKY&ttl=1483262159&t=2f76a6e21c22dd0ad1484366e23ca986"
+                },
+                "human_size": "4.6 MB",
+                "file_size": 4783718,
+                "small": 1,
+                "md5": "489a802ac01b496d1a09fbb0457f0ea3"
+            }],
+            "options_dict": {},
+            "download_identifier": null,
+            "android_app_only": false,
+            "download_version_number": null
+        }],
+        "custom_download_page_box_html": "",
+        "payee": {
+            "human_name": "No Starch Press",
+            "machine_name": "nostarchpress"
+        },
+        "human_name": "Write Great Code, Volume 2: Thinking Low-Level, Writing High-Level",
+        "library_family_name": "",
+        "icon": "https://humblebundle-a.akamaihd.net/misc/files/hashed/f2991cbf1ec0b73de74d04d00aaf245af4cb8bea.png"
+    }, {
+        "machine_name": "artofrprogramming",
+        "url": "https://www.nostarch.com/artofr.htm",
+        "downloads": [{
+            "machine_name": "artofrprogramming_ebook",
+            "platform": "ebook",
+            "download_struct": [{
+                "sha1": "7c596a6c755e42c8b93460cb8238ca1693e1e7f7",
+                "name": "MOBI",
+                "url": {
+                    "web": "https://dl.humble.com/artofrprogramming.mobi?gamekey=A2vaW36EGSmvcdKY&ttl=1483262159&t=3ac3c733184841d8722b4a06ed87b9c7",
+                    "bittorrent": "https://dl.humble.com/torrents/artofrprogramming.mobi.torrent?gamekey=A2vaW36EGSmvcdKY&ttl=1483262159&t=d37bb9472a2a40db56a1cee944910630"
+                },
+                "human_size": "10.4 MB",
+                "uses_kindle_sender": true,
+                "file_size": 10885858,
+                "small": 1,
+                "md5": "86327fe043fdea12fe9f1e778f3f1ab7"
+            }, {
+                "sha1": "d37f5be33ad5726b69d63b874520d35722df33d9",
+                "name": "EPUB",
+                "url": {
+                    "web": "https://dl.humble.com/artofrprogramming.epub?gamekey=A2vaW36EGSmvcdKY&ttl=1483262159&t=dea8be1c45889acecb6f83ba9f7f1783",
+                    "bittorrent": "https://dl.humble.com/torrents/artofrprogramming.epub.torrent?gamekey=A2vaW36EGSmvcdKY&ttl=1483262159&t=b5828129e95ae539d246248e68bf8454"
+                },
+                "human_size": "1.8 MB",
+                "file_size": 1886461,
+                "small": 1,
+                "md5": "60034ba8303fff38ac9c2cb08f8e4901"
+            }, {
+                "sha1": "687f5e998be6b91b66148a49e6f16b7d9fbef322",
+                "name": "PDF",
+                "url": {
+                    "web": "https://dl.humble.com/artofrprogramming.pdf?gamekey=A2vaW36EGSmvcdKY&ttl=1483262159&t=29395bba31cadf587386bf8af66c6639",
+                    "bittorrent": "https://dl.humble.com/torrents/artofrprogramming.pdf.torrent?gamekey=A2vaW36EGSmvcdKY&ttl=1483262159&t=8c18cc3879e94116841071e56896768d"
+                },
+                "human_size": "12 MB",
+                "file_size": 12579067,
+                "small": 1,
+                "md5": "fd3b62281585c8c6a1e9af226032cbf5"
+            }],
+            "options_dict": {},
+            "download_identifier": null,
+            "android_app_only": false,
+            "download_version_number": null
+        }],
+        "custom_download_page_box_html": null,
+        "payee": {
+            "human_name": "No Starch Press",
+            "machine_name": "nostarchpress"
+        },
+        "human_name": "Art of R Programming: A Tour of Statistical Software Design",
+        "library_family_name": null,
+        "icon": "https://humblebundle-a.akamaihd.net/misc/files/hashed/5db233d5a6d7720eaf6ac04317ed52ce46845172.png"
+    }, {
+        "machine_name": "pythonplayground_geekyprojectsforthecuriousprogrammer",
+        "url": "https://www.nostarch.com/pythonplayground",
+        "downloads": [{
+            "machine_name": "pythonplayground_geekyprojectsforthecuriousprogrammer_ebook",
+            "platform": "ebook",
+            "download_struct": [{
+                "sha1": "84e74adba0b9a6e91d0137eff17175f664388470",
+                "name": "MOBI",
+                "url": {
+                    "web": "https://dl.humble.com/pythonplayground_geekyprojectsforthecuriousprogrammer.mobi?gamekey=A2vaW36EGSmvcdKY&ttl=1483262159&t=bf2f0623af8b2107ff14531bdfb91de4",
+                    "bittorrent": "https://dl.humble.com/torrents/pythonplayground_geekyprojectsforthecuriousprogrammer.mobi.torrent?gamekey=A2vaW36EGSmvcdKY&ttl=1483262159&t=0435ca686ac3017acc18a0d43dec766b"
+                },
+                "human_size": "47.4 MB",
+                "uses_kindle_sender": true,
+                "file_size": 49695487,
+                "small": 1,
+                "md5": "b9e5f0412449fda366ce4871dbcb6037"
+            }, {
+                "sha1": "433a001e07b81d3b7e072f8d0a6f4fb40f28393a",
+                "name": "EPUB",
+                "url": {
+                    "web": "https://dl.humble.com/pythonplayground_geekyprojectsforthecuriousprogrammer.epub?gamekey=A2vaW36EGSmvcdKY&ttl=1483262159&t=d01ccc727e6e81dba39d2b7a1609341d",
+                    "bittorrent": "https://dl.humble.com/torrents/pythonplayground_geekyprojectsforthecuriousprogrammer.epub.torrent?gamekey=A2vaW36EGSmvcdKY&ttl=1483262159&t=3ad17b15bd289cb134c193d986f70477"
+                },
+                "human_size": "23.8 MB",
+                "file_size": 24970898,
+                "small": 1,
+                "md5": "e62dfb6dc841f3fd309af708df7e80d5"
+            }, {
+                "sha1": "acbe8f2d1b27ac14c84fa84b68f021aae512c071",
+                "name": "PDF",
+                "url": {
+                    "web": "https://dl.humble.com/pythonplayground_geekyprojectsforthecuriousprogrammer.pdf?gamekey=A2vaW36EGSmvcdKY&ttl=1483262159&t=e5617de4265bee4fa111dac203fc8f0e",
+                    "bittorrent": "https://dl.humble.com/torrents/pythonplayground_geekyprojectsforthecuriousprogrammer.pdf.torrent?gamekey=A2vaW36EGSmvcdKY&ttl=1483262159&t=6c83f0905a3e94030fa4e31cba280a26"
+                },
+                "human_size": "11.8 MB",
+                "file_size": 12383854,
+                "small": 1,
+                "md5": "3534a3be0d4269c189407842e6f6919e"
+            }],
+            "options_dict": {},
+            "download_identifier": null,
+            "android_app_only": false,
+            "download_version_number": null
+        }],
+        "custom_download_page_box_html": null,
+        "payee": {
+            "human_name": "No Starch Press",
+            "machine_name": "nostarchpress"
+        },
+        "human_name": "Python Playground: Geeky Projects for the Curious Programmer",
+        "library_family_name": null,
+        "icon": "https://humblebundle-a.akamaihd.net/misc/files/hashed/966c651e8f719e31becb198c8cdf32156de1a7c5.png"
+    }],
+    "is_giftee": false,
+    "claimed": true,
+    "total": 30.0,
+    "path_ids": [
+        "5659293644881920"
+    ]
+}
