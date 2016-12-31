@@ -1,4 +1,6 @@
+import argparse
 import json
+import os
 import re
 import sys
 from urllib.parse import urlparse
@@ -33,35 +35,91 @@ def make_safe(pc):
 
 
 def flat_sums(products):
+    checksums = []
     for product in products:
         for download in product['downloads']:
             for ds in download['download_struct']:
                 filename = urlparse(ds['url']['web']).path.split("/")[-1]
                 checksum = ds['md5']
-                print(checksum + ' *./' + make_safe(filename))
+                checksums.append(checksum + ' *./' + make_safe(filename))
+    return checksums
 
 
 def folder_sums(products):
+    checksums = []
     for product in products:
         for download in product['downloads']:
             for ds in download['download_struct']:
                 filename = urlparse(ds['url']['web']).path.split("/")[-1]
                 folder = product['human_name']
                 checksum = ds['md5']
-                print(checksum + ' *./' + make_safe(folder) + '/' + make_safe(filename))
+                checksums.append(checksum + ' *./' + make_safe(folder) + '/' + make_safe(filename))
+    return checksums
 
 
-def main(argv=None):
-    if not argv[1]:
-        return
+def print_checksums(checksums):
+    for checksum in checksums:
+        print(checksum)
 
-    fp = open(argv[1])
+
+def write_checksums(checksums, filename):
+    fp = open(filename, 'w', newline='\n', encoding='utf-8')
+    for checksum in checksums:
+        fp.write(checksum + '\n')
+    fp.close()
+
+
+def make_folders(products):
+    for product in products:
+        dirname = product['human_name']
+        os.mkdir(make_safe(dirname))
+
+
+def parse_args():
+    parser = argparse.ArgumentParser()
+
+    # Positional argument: filename
+    parser.add_argument("filename", help="The file containing the JSON to work with.")
+
+    # Flag: use automatic folder hierarchy instead of flat listing.
+    parser.add_argument("-f", "--folders", help="Use automatic folder hierarchy in output.", action="store_true")
+
+    # Optional argument: write to file
+    # Default: print to screen
+    parser.add_argument("-o", "--output", help="File to print expected checksums to.")
+
+    # Optional argument: make directories
+    # Over-rides checksum calculations, instead making the directories for the files to be put in.
+    parser.add_argument("-d", "--mkdirs",
+                           help="Make directories for the files to be put in instead of showing checksums",
+                           action="store_true")
+
+    args = parser.parse_args()
+    return args, parser
+
+
+def main():
+    args, parser = parse_args()
+
+    # Load JSON from file and get the products portion.
+    fp = open(args.filename)
     data = json.load(fp)
+    fp.close()
     products = data['subproducts']
 
-    flat_sums(products)
-    print()
-    folder_sums(products)
+    # First, make directories if requested.
+    if args.mkdirs:
+        make_folders(products)
+
+    # Get the checksums in the desired format.
+    checksums = folder_sums(products) if args.folders else flat_sums(products)
+
+    # Print checksums to desired output (terminal by default, file otherwise).
+    if args.output:
+        write_checksums(checksums, args.output)
+    else:
+        print_checksums(checksums)
+
 
 if __name__ == "__main__":
-    main(sys.argv)
+    main()
