@@ -1,5 +1,6 @@
 import sys
 import json
+from urllib.parse import urlparse
 
 
 def main(argv=None):
@@ -12,7 +13,7 @@ def main(argv=None):
     for product in products:
         for download in product['downloads']:
             for ds in download['download_struct']:
-                filename = ds['url']['web']
+                filename = urlparse(ds['url']['web']).path.split("/")[-1]
                 checksum = ds['md5']
                 print(checksum + ' *./' + filename)
 
