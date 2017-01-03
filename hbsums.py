@@ -3,6 +3,7 @@ import json
 import os
 import re
 import sys
+from typing import List
 from urllib.parse import urlparse
 
 ILLEGAL_NAMES = ['CON',
@@ -34,26 +35,44 @@ def make_safe(path_component):
     return safe_pc
 
 
-def flat_sums(products):
-    checksums = []
-    for product in products:
+class ProductInfo:
+    def __init__(self, human_name, filename, checksum):
+        self.human_name = human_name
+        self.filename = filename
+        self.checksum = checksum
+
+        self.safe_human_name = make_safe(human_name)
+        self.safe_filename = make_safe(filename)
+
+
+def get_product_info(data):
+    product_info = []
+    for product in data['subproducts']:
         for download in product['downloads']:
             for ds in download['download_struct']:
+                human_name = product['human_name']
                 filename = urlparse(ds['url']['web']).path.split("/")[-1]
                 checksum = ds['md5']
-                checksums.append(checksum + ' *./' + make_safe(filename))
+                info = ProductInfo(human_name,
+                                   filename,
+                                   checksum)
+                product_info.append(info)
+    return product_info
+
+
+def flat_sums(products: List[ProductInfo]):
+    checksums = []
+    for product in products:
+        checksums.append(product.checksum + ' *./' + product.safe_filename)
     return checksums
 
 
-def folder_sums(products):
+def folder_sums(products: List[ProductInfo]):
     checksums = []
     for product in products:
-        for download in product['downloads']:
-            for ds in download['download_struct']:
-                filename = urlparse(ds['url']['web']).path.split("/")[-1]
-                folder = product['human_name']
-                checksum = ds['md5']
-                checksums.append(checksum + ' *./' + make_safe(folder) + '/' + make_safe(filename))
+        checksums.append(product.checksum + ' *./'
+                         + product.safe_human_name + '/'
+                         + product.safe_filename)
     return checksums
 
 
@@ -69,10 +88,12 @@ def write_checksums(checksums, filename):
     fp.close()
 
 
-def make_folders(products):
+def make_folders(products: List[ProductInfo]):
+    folders = set()
     for product in products:
-        dirname = product['human_name']
-        os.mkdir(make_safe(dirname))
+        folders.add(product.safe_human_name)
+    for folder in folders:
+        os.mkdir(folder)
 
 
 def parse_args():
@@ -105,7 +126,7 @@ def main():
     fp = open(args.filename)
     data = json.load(fp)
     fp.close()
-    products = data['subproducts']
+    products = get_product_info(data)
 
     # First, make directories if requested.
     if args.mkdirs:
