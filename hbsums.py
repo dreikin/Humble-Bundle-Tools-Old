@@ -14,11 +14,11 @@ ILLEGAL_NAMES = ['CON',
 
 
 # Makes a path component safe for use on Windows (and probably all other systems).
-def make_safe(pc):
+def make_safe(path_component):
     # See https://msdn.microsoft.com/en-us/library/aa365247.aspx for bad names.
     # Illegal characters are removed, illegal names are deterministically renamed.
 
-    safe_pc = pc
+    safe_pc = path_component
     # Remove reserved characters.
     safe_pc = re.sub(r'[\\/*?:"<>|]', '', safe_pc)
     safe_pc = re.sub('[\u0000-\u001F]', '', safe_pc)
