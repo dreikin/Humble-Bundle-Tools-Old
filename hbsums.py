@@ -2,7 +2,6 @@ import argparse
 import json
 import os
 import re
-import sys
 from typing import List
 from urllib.parse import urlparse
 
@@ -94,6 +93,16 @@ def make_folders(products: List[ProductInfo]):
         folders.add(product.safe_human_name)
     for folder in folders:
         os.mkdir(folder)
+
+
+def move_items(products: List[ProductInfo]):
+    for product in products:
+        os.rename(product.safe_filename, product.safe_human_name + "/" + product.safe_filename)
+
+
+def make_move(products: List[ProductInfo]):
+    make_folders(products)
+    move_items(products)
 
 
 def parse_args():
