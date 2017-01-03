@@ -1,7 +1,9 @@
 import argparse
+import hashlib
 import json
 import os
 import re
+from functools import partial
 from typing import List
 from urllib.parse import urlparse
 
@@ -103,6 +105,55 @@ def move_items(products: List[ProductInfo]):
 def make_move(products: List[ProductInfo]):
     make_folders(products)
     move_items(products)
+
+
+class ChecksumItem:
+    def __init__(self, filename, binary_mode):
+        self.filename = filename
+        self.binary_mode = binary_mode
+        self._checksum = ""
+
+    def checksum(self):
+        if self._checksum == "":
+            mode = 'rb' if self.binary_mode else 'r'
+            # StackOverflow implementation.
+            # See:
+            # http://stackoverflow.com/posts/7829658/revisions
+            with open(self.filename, mode) as fp:
+                md5sum = hashlib.md5()
+                for buf in iter(partial(fp.read, 4096), b''):
+                    md5sum.update(buf)
+            self._checksum = md5sum.hexdigest()
+        return self._checksum
+
+
+def check(checksums):
+    items = []
+    for line in checksums:
+        binary = False  # default is text mode.
+        checksum, filename = line.split(' ', 1)
+        if filename[0] == '*':
+            binary = True  # use binary mode instead.
+        filename = filename[1:]
+        items.append({'item': ChecksumItem(filename, binary), 'checksum': checksum})
+
+    failed = 0
+    succeeded = 0
+    for item in items:
+        try:
+            if item['item'].checksum() == item['checksum']:
+                print(item['item'].filename + ": OK")
+                succeeded += 1
+            else:
+                print(item['item'].filename + ": FAILED")
+                failed += 1
+        except PermissionError as e:
+            print("Problem on file '" + item['item'].filename + "'")
+            print(e)
+            failed += 1
+
+    print("Succeeded: ", succeeded)
+    print("Failed: ", failed)
 
 
 def parse_args():
