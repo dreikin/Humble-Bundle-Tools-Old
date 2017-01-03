@@ -159,21 +159,84 @@ def check(checksums):
 def parse_args():
     parser = argparse.ArgumentParser()
 
+    # Arguments Summary
+    # =================
+    # filename:
+    #   positional, required; the name of the file containing the JSON data.
+    # -f, --folders:
+    #   flag; Signals to use folder hierarchy instead of assuming all files are in the same directory.
+    # -w, --write:
+    #   optional: Tells script to write checksums to a file instead of stdout.
+    # -p, --print:
+    #   optional: Tells script to print checksums to screen.
+    # -c, --check
+    #   flag; Tells script to verify files against checksums.
+    #
+    # Exclusive options:
+    # -d, --mkdirs:
+    #   optional; Tells script to create directories for each product.
+    # -a, --automove
+    #   optional, Tells script to move each file into its appropriate directory.
+    # -m, --makemove
+    #   optional; Tells script to do --mkdirs then --automove.
+
     # Positional argument: filename
     parser.add_argument("filename", help="The file containing the JSON to work with.")
 
-    # Flag: use automatic folder hierarchy instead of flat listing.
-    parser.add_argument("-f", "--folders", help="Use automatic folder hierarchy in output.", action="store_true")
+    # Checksum-focused arguments.
+    checksum_group = parser.add_argument_group(title="Checksum actions")
 
     # Optional argument: write to file
     # Default: print to screen
-    parser.add_argument("-o", "--output", help="File to print expected checksums to.")
+    checksum_group.add_argument("-p",
+                                "--print",
+                                help="Print expected checksums to console.",
+                                action="store_true")
+
+    # Optional argument: write to file
+    # Default: print to screen
+    checksum_group.add_argument("-w",
+                                "--write",
+                                help="Write expected checksums to a specified file.",
+                                metavar="FILE")
+
+    # Flag: check files against checksums.
+    checksum_group.add_argument("-c",
+                        "--check",
+                        help="Check files against checksums.",
+                        action="store_true")
+
+    # General options.
+    options_group = parser.add_argument_group(title="Options")
+
+    # Flag: use automatic folder hierarchy instead of flat listing.
+    options_group.add_argument("-f",
+                               "--folders",
+                               help="Use automatic folder hierarchy in output." +
+                                    "Turned on automatically if an option moving files into folders is used.",
+                               action="store_true")
+
+    # File and folder actions.
+    group = parser.add_mutually_exclusive_group()
 
     # Optional argument: make directories
     # Over-rides checksum calculations, instead making the directories for the files to be put in.
-    parser.add_argument("-d", "--mkdirs",
-                           help="Make directories for the files to be put in instead of showing checksums",
-                           action="store_true")
+    group.add_argument("-d",
+                        "--mkdirs",
+                        help="Make directories for the files to be put in instead of showing checksums",
+                        action="store_true")
+
+    # Optional argument: move files into directories
+    group.add_argument("-a",
+                       "--automove",
+                       help="Move each file into its appropriate directory.  Assumes directories already exist.",
+                       action="store_true")
+
+    # Optional argument: make directories and move the files into matching directories.
+    group.add_argument("-m",
+                       "--makemove",
+                       help="Make directories and then move each file into its appropriate directory.",
+                       action="store_true")
 
     args = parser.parse_args()
     return args, parser
@@ -181,6 +244,7 @@ def parse_args():
 
 def main():
     args, parser = parse_args()
+    work_done = False
 
     # Load JSON from file and get the products portion.
     fp = open(args.filename)
@@ -188,18 +252,39 @@ def main():
     fp.close()
     products = get_product_info(data)
 
-    # First, make directories if requested.
+    # First, do directory and file operations.
     if args.mkdirs:
         make_folders(products)
+        work_done = True
+
+    if args.automove:
+        args.folders = True
+        move_items(products)
+        work_done = True
+
+    if args.makemove:
+        args.folders = True
+        make_move(products)
+        work_done = True
 
     # Get the checksums in the desired format.
     checksums = folder_sums(products) if args.folders else flat_sums(products)
 
-    # Print checksums to desired output (terminal by default, file otherwise).
-    if args.output:
-        write_checksums(checksums, args.output)
-    else:
+    # Print checksums to desired output, if any.
+    if args.write:
+        write_checksums(checksums, args.write)
+        work_done = True
+    if args.print:
         print_checksums(checksums)
+        work_done = True
+
+    # Check files against checksums.
+    if args.check:
+        check(checksums)
+        work_done = True
+
+    if not work_done:
+        print("Nothing to do.")
 
 
 if __name__ == "__main__":
